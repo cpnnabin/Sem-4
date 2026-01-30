@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ================= MODULE 1: HTML FUNDAMENTALS ================= -->
+    <meta charset="UTF-8">
+
+    <!-- ================= MODULE 7: ACCESSIBILITY & SEO ================= -->
+    <meta name="description" content="Complete HTML Laboratory project by Nabin Dhakal covering all HTML concepts from basics to advanced.">
+    <meta name="keywords" content="HTML, Web Development, Forms, Tables, Semantic HTML">
+    <meta name="author" content="Nabin Dhakal">
+
+    <title>Nabin Dhakal | Complete HTML Laboratory</title>
+</head>
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header>
+        <h1>Nabin Dhakal</h1>
+        <p>Aspiring Software Engineer | Complete HTML Laboratory</p>
+    </header>
+
+    <!-- ================= NAVIGATION ================= -->
+    <nav>
+        <a href="#about">About</a> |
+        <a href="#skills">Skills</a> |
+        <a href="#media">Media</a> |
+        <a href="#table">Table</a> |
+        <a href="#form">Form</a> |
+        <a href="#faq">FAQ</a>
+    </nav>
+
+    <hr>
+
+    <!-- ================= MODULE 2: TEXT, LINKS & LISTS ================= -->
+    <section id="about">
+        <h2>About Me</h2>
+
+        <img 
+            src="https://pbs.twimg.com/profile_images/1656601652009504769/ToJZH8X9_400x400.jpg"
+            alt="Profile photo of Nabin Dhakal"
+            width="200">
+
+        <p>
+            <strong>Nabin Dhakal</strong><br>
+            <em>Student of Software Engineering</em>
+        </p>
+
+        <p>
+            This website is built using only HTML to demonstrate
+            real-world structure, accessibility, and semantic usage.
+        </p>
+
+        <a href="https://nabindhakal28.com.np/" target="_blank" rel="noopener noreferrer">
+            Visit My Personal Website
+        </a>
+    </section>
+
+    <hr>
+
+    <!-- ================= LISTS ================= -->
+    <section id="skills">
+        <h2>Skills</h2>
+
+        <ul>
+            <li>HTML</li>
+            <li>CSS (Learning)</li>
+            <li>Java Basics</li>
+        </ul>
+
+        <h3>Learning Roadmap</h3>
+        <ol>
+            <li>HTML Fundamentals</li>
+            <li>CSS Styling</li>
+            <li>JavaScript Logic</li>
+        </ol>
+    </section>
+
+    <hr>
+
+    <!-- ================= MODULE 3: IMAGES & MEDIA ================= -->
+    <section id="media">
+        <h2>Images & Media</h2>
+
+        <audio controls>
+            <source src="song.mp3">
+            Your browser does not support audio.
+        </audio>
+
+        <br><br>
+
+        <video controls width="300">
+            <source src="video.mp4">
+            Your browser does not support video.
+        </video>
+
+        <br><br>
+
+        <iframe
+            src="hhttps://www.youtube.com/watch?v=4UB5XLNVf4k"
+            title="YouTube"
+            width="300"
+            height="200">
+        </iframe>
+    </section>
+
+    <hr>
+
+    <!-- ================= MODULE 4: SEMANTIC HTML ================= -->
+    <section>
+        <article>
+            <h2>Why Semantic HTML?</h2>
+            <p>
+                Semantic HTML improves accessibility, SEO, and readability.
+                It helps browsers, screen readers, and developers understand content.
+            </p>
+        </article>
+
+        <aside>
+            <p><strong>Extra:</strong> Semantic tags are industry standard.</p>
+        </aside>
+    </section>
+
+    <hr>
+
+    <!-- ================= MODULE 6: HTML TABLES ================= -->
+    <section id="table">
+        <h2>Student Report</h2>
+
+        <table border="1">
+            <caption>Academic Performance</caption>
+
+            <thead>
+                <tr>
+                    <th rowspan="2">Name</th>
+                    <th colspan="2">Marks</th>
+                </tr>
+                <tr>
+                    <th>Math</th>
+                    <th>Science</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Ram</td>
+                    <td>85</td>
+                    <td>90</td>
+                </tr>
+                <tr>
+                    <td>Shyam</td>
+                    <td>78</td>
+                    <td>88</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <hr>
+
+    <!-- ================= MODULE 5: HTML FORMS ================= -->
+    <section id="form">
+        <h2>Admission Form</h2>
+
+        <form>
+            <fieldset>
+                <legend>Personal Info</legend>
+
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" required><br><br>
+
+                <label for="phone">Phone:</label><br>
+                <input type="tel" id="phone"><br><br>
+
+                <label for="dob">Date of Birth:</label><br>
+                <input type="date" id="dob">
+            </fieldset>
+
+            <fieldset>
+                <legend>Other Details</legend>
+
+                <label for="course">Select Course:</label><br>
+                <select id="course">
+                    <optgroup label="Technology">
+                        <option>Web Development</option>
+                        <option>AI</option>
+                    </optgroup>
+                </select>
+
+                <br><br>
+
+                <label for="file">Upload File:</label><br>
+                <input type="file" id="file"><br><br>
+
+                <input type="checkbox" id="agree">
+                <label for="agree">Agree to Terms</label>
+            </fieldset>
+
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- ================= MODULE 8: ADVANCED HTML ================= -->
+    <section id="faq">
+        <h2>FAQ</h2>
+
+        <details>
+            <summary>What is HTML?</summary>
+            <p>HTML is the standard markup language for creating web pages.</p>
+        </details>
+
+        <details>
+            <summary>Is this site accessible?</summary>
+            <p>Yes. It uses labels, alt text, semantic tags, and proper headings.</p>
+        </details>
+
+        <p contenteditable="true">
+            This text is editable (contenteditable example).
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <p>Website: https://nabindhakal28.com.np</p>
+        <p>&copy; 2026 Nabin Dhakal. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

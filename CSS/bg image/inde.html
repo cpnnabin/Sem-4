@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background Image Demo</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+
+      background-image: url("boarding-pass.jpg"); /* your image file */
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .content {
+      background-color: rgba(0, 0, 0, 0.5); /* overlay effect */
+      padding: 20px 40px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="content">
+    <h1>Welcome 👋</h1>
+    <p>Background image with CSS properties.</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 5.1 – Admission Form</title>
+</head>
+<body>
+
+    <h1>Student Admission Form</h1>
+
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>Personal Info</legend>
+
+            <label>
+                Full Name:
+                <input type="text" name="fullname" placeholder="Full Name" required>
+            </label><br><br>
+
+            <label>
+                Email:
+                <input type="email" name="email" placeholder="Email" required>
+            </label><br><br>
+
+            <label>
+                Phone:
+                <input type="tel" name="phone" placeholder="Phone">
+            </label><br><br>
+
+            <label>
+                Date of Birth:
+                <input type="date" name="dob">
+            </label><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Other Details</legend>
+
+            <label>
+                Course:
+                <select name="course" required>
+                    <optgroup label="Technology">
+                        <option value="web">Web Development</option>
+                        <option value="ai">AI</option>
+                    </optgroup>
+                </select>
+            </label><br><br>
+
+            <label>
+                Upload Photo:
+                <input type="file" name="photo">
+            </label><br><br>
+
+            <label>
+                <input type="checkbox" required>
+                I agree to the Terms & Conditions
+            </label><br><br>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</body>
+</html>

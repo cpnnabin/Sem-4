@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Landing Page</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="hello.js"></script>
+    <script src="script.ts"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-blue-600">Tailwind</h1>
+            <ul class="hidden md:flex gap-8 text-sm font-medium">
+                <li class="hover:text-blue-600 cursor-pointer">Home</li>
+                <li class="hover:text-blue-600 cursor-pointer">Features</li>
+                <li class="hover:text-blue-600 cursor-pointer">Pricing</li>
+                <li class="hover:text-blue-600 cursor-pointer">Contact</li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-12 items-center">
+        <div>
+            <h2 class="text-5xl font-bold leading-tight">
+                Build Modern UI with
+                <span class="text-blue-600">Tailwind CSS</span>
+            </h2>
+            <p class="mt-6 text-gray-600 text-lg">
+                Learn how to build responsive, clean and professional layouts using utility-first CSS.
+            </p>
+            <div class="mt-8 flex gap-4">
+                <button class="bg-blue-600 text-white px-8 py-4 rounded-xl hover:bg-blue-700">
+                    Get Started
+                </button>
+                <button class="border border-blue-600 text-blue-600 px-8 py-4 rounded-xl hover:bg-blue-50">
+                    View Docs
+                </button>
+            </div>
+        </div>
+
+        <div class="bg-blue-100 h-80 rounded-2xl flex items-center justify-center">
+            <span class="text-blue-600 font-semibold text-lg">Hero Image</span>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="bg-white py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <h3 class="text-3xl font-bold text-center mb-14">Features</h3>
+
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div class="p-8 bg-gray-50 rounded-2xl shadow">
+                    <h4 class="text-xl font-semibold mb-3">Utility First</h4>
+                    <p class="text-gray-600">
+                        Build UI directly in HTML without writing custom CSS.
+                    </p>
+                </div>
+
+                <div class="p-8 bg-gray-50 rounded-2xl shadow">
+                    <h4 class="text-xl font-semibold mb-3">Responsive</h4>
+                    <p class="text-gray-600">
+                        Mobile-first design with easy responsive utilities.
+                    </p>
+                </div>
+
+                <div class="p-8 bg-gray-50 rounded-2xl shadow">
+                    <h4 class="text-xl font-semibold mb-3">Customizable</h4>
+                    <p class="text-gray-600">
+                        Fully customizable design system for any project.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <h3 class="text-3xl font-bold text-center mb-14">Pricing</h3>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow text-center">
+                    <h4 class="font-semibold text-xl mb-4">Basic</h4>
+                    <p class="text-4xl font-bold mb-6">$0</p>
+                    <ul class="text-gray-600 space-y-2 mb-8">
+                        <li>HTML & CSS</li>
+                        <li>Basic Components</li>
+                        <li>Community Support</li>
+                    </ul>
+                    <button class="w-full border border-blue-600 text-blue-600 py-3 rounded-xl hover:bg-blue-50">
+                        Choose Plan
+                    </button>
+                </div>
+
+                <div class="bg-blue-600 text-white p-8 rounded-2xl shadow text-center scale-105">
+                    <h4 class="font-semibold text-xl mb-4">Pro</h4>
+                    <p class="text-4xl font-bold mb-6">$19</p>
+                    <ul class="space-y-2 mb-8">
+                        <li>All Features</li>
+                        <li>Responsive Layouts</li>
+                        <li>Priority Support</li>
+                    </ul>
+                    <button class="w-full bg-white text-blue-600 py-3 rounded-xl font-semibold hover:bg-gray-100">
+                        Choose Plan
+                    </button>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow text-center">
+                    <h4 class="font-semibold text-xl mb-4">Team</h4>
+                    <p class="text-4xl font-bold mb-6">$49</p>
+                    <ul class="text-gray-600 space-y-2 mb-8">
+                        <li>Team Access</li>
+                        <li>Advanced Components</li>
+                        <li>24/7 Support</li>
+                    </ul>
+                    <button class="w-full border border-blue-600 text-blue-600 py-3 rounded-xl hover:bg-blue-50">
+                        Choose Plan
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="bg-white py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <h3 class="text-3xl font-bold text-center mb-14">What Students Say</h3>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-2xl shadow">
+                    <p class="text-gray-600 mb-4">
+                        “Tailwind made CSS so much easier to understand.”
+                    </p>
+                    <h5 class="font-semibold">– Alex</h5>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-2xl shadow">
+                    <p class="text-gray-600 mb-4">
+                        “I can build layouts without writing CSS files.”
+                    </p>
+                    <h5 class="font-semibold">– Maria</h5>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-2xl shadow">
+                    <p class="text-gray-600 mb-4">
+                        “Perfect for beginners and fast projects.”
+                    </p>
+                    <h5 class="font-semibold">– John</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 text-center">
+        <h3 class="text-3xl font-bold mb-4">Start Learning Tailwind Today</h3>
+        <p class="text-gray-600 mb-8">
+            Build clean, responsive websites faster than ever.
+        </p>
+        <button class="bg-blue-600 text-white px-10 py-4 rounded-xl hover:bg-blue-700">
+            Join Now
+        </button>
+    </section>
+
+    <!-- Position Demo Section -->
+    <section class="max-w-7xl mx-auto px-6 py-20 bg-gray-100">
+        <h3 class="text-3xl font-bold text-center mb-10">CSS Position Demo</h3>
+
+        <div class="relative bg-white h-64 border border-gray-300 rounded-2xl flex items-center justify-center">
+            <p class="text-gray-700 font-semibold">Parent (relative)</p>
+
+            <!-- Absolute Child -->
+            <div class="absolute top-4 right-4 bg-blue-600 text-white px-4 py-2 rounded">
+                Absolute Box
+            </div>
+
+            <!-- Another Absolute Child -->
+            <div class="absolute bottom-4 left-4 bg-green-600 text-white px-4 py-2 rounded">
+                Absolute Box 2
+            </div>
+        </div>
+
+        <p class="mt-6 text-gray-600 text-center">
+            The blue and green boxes are positioned <span class="font-semibold">absolute</span> relative to their parent
+            container (which is <span class="font-semibold">relative</span>).
+        </p>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-8">
+        <div class="max-w-7xl mx-auto px-6 text-center text-sm">
+            © 2026 Tailwind Demo. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+
+</html>

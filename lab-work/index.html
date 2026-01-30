@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Modern CSS Layout Lab</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- MODULE 1: FIXED HEADER -->
+  <header class="header">
+    <h1>Management Dashboard</h1>
+  </header>
+
+  <!-- MODULE 2: FLEXBOX NAV -->
+  <nav class="nav">
+    <div class="logo">MyApp</div>
+    <ul class="menu">
+      <li>Dashboard</li>
+      <li>Reports</li>
+      <li>Settings</li>
+    </ul>
+  </nav>
+
+  <!-- MODULE 3: GRID DASHBOARD -->
+  <main class="dashboard">
+    <aside class="sidebar">
+      Sidebar Menu
+    </aside>
+
+    <section class="content">
+
+      <!-- Sticky Section Title -->
+      <h2 class="sticky-title">Statistics</h2>
+
+      <!-- Cards -->
+      <div class="cards">
+        <div class="card">
+          Users
+          <span class="badge">5</span>
+        </div>
+        <div class="card">Sales</div>
+        <div class="card span">Revenue (Expanded)</div>
+        <div class="card">Feedback</div>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- MODULE 1: FIXED FOOTER -->
+  <footer class="footer">
+    © 2026 Modern CSS Lab
+  </footer>
+
+</body>
+</html>

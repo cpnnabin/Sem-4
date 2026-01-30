@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+  background: #1e293b;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+/* Hero */
+.hero {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f1f5f9;
+}
+.hero-content {
+  text-align: center;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: #1d4ed8;
+}
+
+/* Login */
+.center-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-box {
+  margin-top: 50px;
+  width: 300px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+.login-box input:focus {
+  outline: 2px solid #2563eb;
+}
+
+/* Dashboard */
+.dashboard {
+  display: flex;
+}
+.sidebar {
+  position: fixed;
+  width: 200px;
+  height: 100vh;
+  background: #0f172a;
+  padding: 20px;
+}
+.sidebar a {
+  display: block;
+  color: white;
+  margin-bottom: 15px;
+  text-decoration: none;
+}
+
+/* Grid */
+.grid {
+  margin-left: 220px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: #e5e7eb;
+  padding: 30px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* Animation */
+.animate {
+  animation: slideUp 0.8s ease;
+}
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Table */
+.table-section {
+  padding: 20px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+tr:hover {
+  background: #f3f4f6;
+  transition: 0.3s;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dashboard {
+    flex-direction: column;
+  }
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  .grid {
+    margin-left: 0;
+  }
+}

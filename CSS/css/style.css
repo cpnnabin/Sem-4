@@ -1,0 +1,53 @@
+/* Footer paragraph styling */
+footer p {
+    text-align: center;
+    font-size: 14px; /* removed space before px */
+    color: #777777;  /* fixed color value */
+}
+
+/* Footer links (if any inside div) */
+footer div a {
+    text-decoration: none;
+    color: #0066cc; /* example color */
+}
+
+/* Main list links */
+main ul li a {
+    text-decoration: none;
+    color: #006660;
+}
+
+/* First list item link */
+main ul li:first-child a {
+    font-weight: bold;
+}
+
+/* Even list item links */
+main ul li:nth-child(even) a {
+    background-color: #f0f0f0; /* example highlight for even items */
+}
+
+/* Link states */
+a:link {
+    color: #FF0000; /* normal unvisited links */
+}
+
+a:visited {
+    color: #00FF00; /* visited links */
+}
+
+a:hover {
+    color: #0000FF; /* mouse over / hover */
+    text-decoration: underline;
+}
+
+/* List item first (if needed, corrected pseudo-class) */
+li:first-child {
+    /* Example: add margin or style */
+    margin-top: 5px;
+}
+
+ul li::marker {
+    color: red; /* change bullet color */
+    font-size: 20px; /* optional: change bullet size */
+}
