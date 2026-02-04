@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Product Card & User Form</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--
+      =============================
+      Header Section
+      =============================
+      Contains the page title and theme toggle button
+    -->
+    <header>
+        <h1>Interactive Product Card & User Registration</h1>
+        <!-- Button to toggle dark/light mode -->
+        <button id="theme-toggle">Toggle Dark/Light Mode</button>
+    </header>
+
+    <main>
+        <!--
+          =============================
+          Product Card Section
+          =============================
+          Displays product image, title, description, price, and Add to Cart button
+        -->
+        <section id="product-section">
+            <div class="product-card">
+                <!-- Product image (shows fallback if not found) -->
+                <img id="product-img" src="img/product.jpg" alt="Product Image">
+                <!-- Product title -->
+                <h2 id="product-title">Product Title</h2>
+                <!-- Product description -->
+                <p id="product-desc">This is a short product description.</p>
+                <!-- Product price -->
+                <div class="product-price">$49.99</div>
+                <!-- Add to Cart button -->
+                <button id="add-to-cart">Add to Cart</button>
+                <!-- Success message appears here -->
+                <div id="cart-message"></div>
+            </div>
+        </section>
+
+        <!--
+          =============================
+          User Registration Form Section
+          =============================
+          Collects user info and validates input
+        -->
+        <section id="form-section">
+            <form id="registration-form" novalidate>
+                <!-- Full Name input -->
+                <div class="form-group">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                    <!-- Error message for Full Name -->
+                    <div class="error-message" id="error-fullname"></div>
+                </div>
+                <!-- Email input -->
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                    <!-- Error message for Email -->
+                    <div class="error-message" id="error-email"></div>
+                </div>
+                <!-- Password input with show/hide toggle -->
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="password" name="password" required>
+                        <!-- Button to show/hide password -->
+                        <button type="button" class="toggle-password" data-target="password">Show</button>
+                    </div>
+                    <!-- Error message for Password -->
+                    <div class="error-message" id="error-password"></div>
+                </div>
+                <!-- Confirm Password input with show/hide toggle -->
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                        <!-- Button to show/hide confirm password -->
+                        <button type="button" class="toggle-password" data-target="confirm-password">Show</button>
+                    </div>
+                    <!-- Error message for Confirm Password -->
+                    <div class="error-message" id="error-confirm-password"></div>
+                </div>
+                <!-- Submit button -->
+                <button type="submit" id="submit-btn">Register</button>
+                <!-- Success message appears here -->
+                <div id="form-success-message"></div>
+            </form>
+        </section>
+    </main>
+    <!-- Link to external JavaScript file -->
+    <script src="js/script.js"></script>
+</body>
+</html>

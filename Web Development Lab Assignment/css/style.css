@@ -1,0 +1,208 @@
+
+/*
+========================================
+ Beginner-Friendly CSS Comments
+========================================
+*/
+
+/*
+  CSS Variables for colors and themes
+  You can use these variables anywhere in your CSS for easy theme changes
+*/
+:root {
+    --bg-light: #f9f9f9;      /* Light mode background */
+    --bg-dark: #222;          /* Dark mode background */
+    --text-light: #222;       /* Light mode text color */
+    --text-dark: #f9f9f9;     /* Dark mode text color */
+    --card-bg-light: #fff;    /* Product card background (light) */
+    --card-bg-dark: #333;     /* Product card background (dark) */
+    --error: #e74c3c;         /* Error color (red) */
+    --success: #27ae60;       /* Success color (green) */
+}
+
+/*
+  Body styles: font, background, and color
+  Transition makes theme change smooth
+*/
+body {
+    background: var(--bg-light);
+    color: var(--text-light);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    transition: background 0.3s, color 0.3s;
+}
+
+/*
+  Dark mode styles for body
+*/
+body.dark-mode {
+    background: var(--bg-dark);
+    color: var(--text-dark);
+}
+
+/*
+  Header layout: flexbox for spacing
+*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+/*
+  Main content: flexbox for side-by-side layout
+  gap adds space between sections
+*/
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem;
+}
+
+/*
+  Product card styles: background, shadow, rounded corners
+*/
+.product-card {
+    background: var(--card-bg-light);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Soft shadow */
+    padding: 1.5rem;
+    width: 300px;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+/*
+  Product card in dark mode
+*/
+body.dark-mode .product-card {
+    background: var(--card-bg-dark);
+}
+
+/*
+  Product image styles: size and rounded corners
+*/
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;      /* Crop image to fit */
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+/*
+  Product price: bigger and bold
+*/
+.product-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+/*
+  Success message below product card
+*/
+#cart-message {
+    margin-top: 1rem;
+    color: var(--success);
+    font-weight: bold;
+}
+
+/*
+  Form group: spacing between fields
+*/
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+/*
+  Label above each input
+*/
+.form-group label {
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+/*
+  Input styles: padding, border, rounded corners
+*/
+.form-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+/*
+  Highlight invalid inputs with red border and background
+*/
+.form-group input.invalid {
+    border-color: var(--error);
+    background: #fff0f0;
+}
+
+/*
+  Invalid input background in dark mode
+*/
+body.dark-mode .form-group input.invalid {
+    background: #330000;
+}
+
+/*
+  Error message text below each input
+*/
+.error-message {
+    color: var(--error);
+    font-size: 0.95rem;
+    margin-top: 0.2rem;
+    min-height: 1.2em; /* Reserve space for error */
+}
+
+/*
+  Success message for form submission
+*/
+#form-success-message {
+    color: var(--success);
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+/*
+  Password field and toggle button layout
+*/
+.password-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+/*
+  Show/Hide password button styles
+*/
+.toggle-password {
+    margin-left: 0.5rem;
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+/*
+  Responsive design for small screens
+  Stacks sections vertically and limits width
+*/
+@media (max-width: 900px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-card, #form-section {
+        width: 100%;
+        max-width: 400px;
+    }
+}
